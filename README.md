@@ -6,7 +6,7 @@ Zander Harteveld, Jaume Bonet, Stéphane Rosset, Che Yang, Fabian Sesterhenn, an
 
 ## Download
 
-Use ```git clone --depth=1 https://github.com/zanderharteveld/TopoBuilderData.git```
+It may be better to clone with ```git clone --depth=1 https://github.com/``` 
 
 ## Setup External Dependencies 
 
