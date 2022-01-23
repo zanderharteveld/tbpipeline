@@ -1,0 +1,65 @@
+- name: nomenclator
+#  subnames: [natlik,betasandwich70120,l55,corrections1X,mid,lmaster]
+#  subnames: [natlik,betasandwich70120,l55,corrections2XZ,mid,lmaster]
+#  subnames: [natlik,betasandwich70120,l55,corrections3XYZ,mid,lmaster]
+#  subnames: [natlik,betasandwich70120,l55,corrections4XYZZ,mid,lmaster]
+#  subnames: [natlik,betasandwich70120,l44,corrections2XZ,mid,lmaster]
+#  subnames: [natlik,betasandwich70120,l44,corrections1X,mid,lmaster]
+#  subnames: [natlik,betasandwich70120,l44,corrections3XYZ,mid,lmaster]
+  subnames: [natlik,betasandwich70120,l44,corrections4XYZZ,mid,lmaster]
+- name: plotter
+  prefix: undirected
+  plot_types:
+    - sketchXZ
+    - sketchXY
+- name: builder
+  connectivity: False
+- name: make_topologies
+- name: builder
+  connectivity: True
+- name: plotter
+  prefix: directed
+  plot_types:
+    - sketchXZ
+    - sketchXY
+- name: imaster
+  correctives:
+    rotate: ['x', 'z'] # ['x', 'z']
+    translate: ['y', 'z'] # ['y', 'z']
+  bin: mid
+  mirror_beta_twist: True
+  mirror_beta_shear: True
+  correction_check: True
+  correction_type: 'network'
+- name: corrector
+- name: loop_master
+  rmsd_cut: 3.2
+- name: fragment_maker
+  protocol: loop_master
+- name: funfoldes
+  nstruct: 5
+  natbias: 5.
+  profile: True
+- name: statistics
+  source: funfoldes
+  stage: folding
+  analysis: geometry
+- name: statistics
+  source: funfoldes
+  stage: design
+  analysis: geometry
+- name: statistics
+  source: funfoldes
+  stage: design
+  analysis: quality
+  metric: molprobity
+- name: statistics
+  source: funfoldes
+  stage: design
+  analysis: quality
+  metric: proq4
+- name: statistics
+  source: funfoldes
+  stage: design
+  analysis: quality
+  metric: trRosetta

@@ -1,0 +1,14 @@
+env     = 1.0
+pair    = 1.0
+cbeta   = 0.0
+vdw     = 1.0
+rg      = 0.0
+cenpack = 0.0
+rsigma  = 1.1
+sheet   = 1.0
+ss_pair = 1.0
+hs_pair = 1.0
+hbond_sr_bb = 1.17
+hbond_lr_bb = 2.0
+
+STRAND_STRAND_WEIGHTS 1 3 

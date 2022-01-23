@@ -1,0 +1,4597 @@
+configuration:
+  name: srch6E5C02_natlik_betasandwich70120_l44_corrections3XYZ_mid_lmaster
+  user: hartevel
+  defaults:
+    length:
+      H: 13
+      E: 7
+    distance:
+      aa: 10.0
+      ab: 11.0
+      bb_pair: 4.85
+      bb_stack: 8.0
+      max_loop: 18.97
+      loop_step: 3.2
+  relative: false
+  reoriented: true
+  flip_first: false
+  protocols:
+  - {}
+  comments:
+  - 0+untagged.198.g9307103.dirty
+topology:
+  architecture:
+  - - coordinates:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      id: A1E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - &id001 !!python/name:numpy.ndarray ''
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - &id002 !!python/object/apply:numpy.dtype
+            args:
+            - O8
+            - 0
+            - 1
+            state: !!python/tuple
+            - 3
+            - '|'
+            - null
+            - null
+            - null
+            - -1
+            - -1
+            - 63
+          - false
+          - - TRP
+            - N
+            - 1
+            - -0.44
+            - -12.4
+            - 0.3299999999999985
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - CA
+            - 1
+            - 0.0
+            - -11.200000000000001
+            - 1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - C
+            - 1
+            - -0.55
+            - -10.000000000000002
+            - 0.3299999999999988
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - O
+            - 1
+            - -2.09
+            - -9.9
+            - 0.21999999999999878
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - N
+            - 2
+            - 0.43999999999999995
+            - -9.2
+            - -0.3300000000000012
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - CA
+            - 2
+            - -1.4818226269682973e-16
+            - -8.0
+            - -1.2100000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - C
+            - 2
+            - 0.55
+            - -6.8
+            - -0.3300000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - O
+            - 2
+            - 2.09
+            - -6.7
+            - -0.22000000000000108
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - N
+            - 3
+            - -0.44
+            - -6.000000000000001
+            - 0.3299999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - CA
+            - 3
+            - 0.0
+            - -4.800000000000001
+            - 1.2099999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - C
+            - 3
+            - -0.55
+            - -3.6000000000000005
+            - 0.32999999999999957
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - O
+            - 3
+            - -2.09
+            - -3.500000000000001
+            - 0.21999999999999958
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - N
+            - 4
+            - 0.4399999999999999
+            - -2.8
+            - -0.3300000000000005
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - CA
+            - 4
+            - -4.445467880904892e-16
+            - -1.5999999999999994
+            - -1.2100000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - C
+            - 4
+            - 0.5499999999999999
+            - -0.39999999999999963
+            - -0.3300000000000003
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - O
+            - 4
+            - 2.09
+            - -0.2999999999999996
+            - -0.2200000000000008
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - N
+            - 5
+            - -0.44
+            - 0.39999999999999963
+            - 0.33000000000000007
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - CA
+            - 5
+            - 0.0
+            - 1.5999999999999994
+            - 1.2100000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - C
+            - 5
+            - -0.55
+            - 2.8
+            - 0.33000000000000035
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - O
+            - 5
+            - -2.09
+            - 2.8999999999999995
+            - 0.22000000000000036
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - N
+            - 6
+            - 0.4399999999999998
+            - 3.5999999999999988
+            - -0.32999999999999985
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - CA
+            - 6
+            - -7.409113134841487e-16
+            - 4.799999999999999
+            - -1.2099999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - C
+            - 6
+            - 0.5499999999999998
+            - 5.999999999999999
+            - -0.3299999999999996
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - O
+            - 6
+            - 2.09
+            - 6.099999999999999
+            - -0.22000000000000053
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - N
+            - 7
+            - -0.44
+            - 6.800000000000002
+            - 0.33000000000000085
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - CA
+            - 7
+            - 0.0
+            - 8.000000000000002
+            - 1.2100000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - C
+            - 7
+            - -0.55
+            - 9.200000000000001
+            - 0.3300000000000011
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - O
+            - 7
+            - -2.09
+            - 9.300000000000002
+            - 0.22000000000000114
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - N
+            - 8
+            - 0.4399999999999997
+            - 10.000000000000002
+            - -0.3299999999999992
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - CA
+            - 8
+            - -1.037275838877808e-15
+            - 11.200000000000001
+            - -1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - C
+            - 8
+            - 0.5499999999999997
+            - 12.4
+            - -0.32999999999999896
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - O
+            - 8
+            - 2.09
+            - 12.500000000000002
+            - -0.22000000000000028
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 4.85
+        y: 0.0
+        z: 0.0
+      id: A2E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 1
+            - 4.409999999999999
+            - 12.4
+            - -0.329999999999997
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 1
+            - 4.85
+            - 11.200000000000001
+            - -1.2099999999999973
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 1
+            - 4.3
+            - 10.000000000000002
+            - -0.3299999999999976
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 1
+            - 2.76
+            - 9.9
+            - -0.21999999999999756
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - N
+            - 2
+            - 5.289999999999999
+            - 9.2
+            - 0.3300000000000023
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - CA
+            - 2
+            - 4.85
+            - 8.0
+            - 1.2100000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - C
+            - 2
+            - 5.3999999999999995
+            - 6.8
+            - 0.33000000000000174
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - O
+            - 2
+            - 6.9399999999999995
+            - 6.7
+            - 0.22000000000000192
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 3
+            - 4.409999999999999
+            - 6.000000000000001
+            - -0.3299999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 3
+            - 4.85
+            - 4.800000000000001
+            - -1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 3
+            - 4.3
+            - 3.6000000000000005
+            - -0.3299999999999991
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 3
+            - 2.76
+            - 3.500000000000001
+            - -0.21999999999999917
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - N
+            - 4
+            - 5.289999999999999
+            - 2.8
+            - 0.33000000000000085
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - CA
+            - 4
+            - 4.849999999999999
+            - 1.5999999999999992
+            - 1.2100000000000004
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - C
+            - 4
+            - 5.3999999999999995
+            - 0.3999999999999996
+            - 0.33000000000000035
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - O
+            - 4
+            - 6.9399999999999995
+            - 0.2999999999999996
+            - 0.22000000000000083
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - N
+            - 5
+            - 4.409999999999999
+            - -0.3999999999999996
+            - -0.3300000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - CA
+            - 5
+            - 4.85
+            - -1.5999999999999992
+            - -1.2100000000000004
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - C
+            - 5
+            - 4.3
+            - -2.8
+            - -0.3300000000000007
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - O
+            - 5
+            - 2.76
+            - -2.8999999999999995
+            - -0.22000000000000072
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 6
+            - 5.289999999999999
+            - -3.5999999999999988
+            - 0.3299999999999994
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 6
+            - 4.849999999999999
+            - -4.799999999999999
+            - 1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 6
+            - 5.3999999999999995
+            - -5.999999999999999
+            - 0.3299999999999989
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 6
+            - 6.9399999999999995
+            - -6.099999999999999
+            - 0.21999999999999978
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 7
+            - 4.409999999999999
+            - -6.800000000000002
+            - -0.3300000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 7
+            - 4.85
+            - -8.000000000000002
+            - -1.2100000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 7
+            - 4.3
+            - -9.200000000000001
+            - -0.33000000000000224
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 7
+            - 2.76
+            - -9.300000000000002
+            - -0.22000000000000228
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 8
+            - 5.289999999999999
+            - -10.000000000000002
+            - 0.32999999999999796
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 8
+            - 4.849999999999999
+            - -11.200000000000001
+            - 1.2099999999999973
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 8
+            - 5.3999999999999995
+            - -12.4
+            - 0.32999999999999746
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 8
+            - 6.9399999999999995
+            - -12.500000000000002
+            - 0.21999999999999875
+      tilt:
+        x: 180.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 9.7
+        y: 0.0
+        z: 0.0
+      id: A3E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - N
+            - 1
+            - 9.26
+            - -12.4
+            - 0.3299999999999985
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - CA
+            - 1
+            - 9.7
+            - -11.200000000000001
+            - 1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - C
+            - 1
+            - 9.149999999999999
+            - -10.000000000000002
+            - 0.3299999999999988
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - O
+            - 1
+            - 7.609999999999999
+            - -9.9
+            - 0.21999999999999878
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - N
+            - 2
+            - 10.139999999999999
+            - -9.2
+            - -0.3300000000000012
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - CA
+            - 2
+            - 9.7
+            - -8.0
+            - -1.2100000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - C
+            - 2
+            - 10.25
+            - -6.8
+            - -0.3300000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - O
+            - 2
+            - 11.79
+            - -6.7
+            - -0.22000000000000108
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - N
+            - 3
+            - 9.26
+            - -6.000000000000001
+            - 0.3299999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - CA
+            - 3
+            - 9.7
+            - -4.800000000000001
+            - 1.2099999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - C
+            - 3
+            - 9.149999999999999
+            - -3.6000000000000005
+            - 0.32999999999999957
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - O
+            - 3
+            - 7.609999999999999
+            - -3.500000000000001
+            - 0.21999999999999958
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 4
+            - 10.139999999999999
+            - -2.8
+            - -0.3300000000000005
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 4
+            - 9.7
+            - -1.5999999999999994
+            - -1.2100000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 4
+            - 10.25
+            - -0.39999999999999963
+            - -0.3300000000000003
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 4
+            - 11.79
+            - -0.2999999999999996
+            - -0.2200000000000008
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - N
+            - 5
+            - 9.26
+            - 0.39999999999999963
+            - 0.33000000000000007
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - CA
+            - 5
+            - 9.7
+            - 1.5999999999999994
+            - 1.2100000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - C
+            - 5
+            - 9.149999999999999
+            - 2.8
+            - 0.33000000000000035
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - O
+            - 5
+            - 7.609999999999999
+            - 2.8999999999999995
+            - 0.22000000000000036
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - N
+            - 6
+            - 10.139999999999999
+            - 3.5999999999999988
+            - -0.32999999999999985
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - CA
+            - 6
+            - 9.7
+            - 4.799999999999999
+            - -1.2099999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - C
+            - 6
+            - 10.25
+            - 5.999999999999999
+            - -0.3299999999999996
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - O
+            - 6
+            - 11.79
+            - 6.099999999999999
+            - -0.22000000000000053
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - N
+            - 7
+            - 9.26
+            - 6.800000000000002
+            - 0.33000000000000085
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - CA
+            - 7
+            - 9.7
+            - 8.000000000000002
+            - 1.2100000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - C
+            - 7
+            - 9.149999999999999
+            - 9.200000000000001
+            - 0.3300000000000011
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - O
+            - 7
+            - 7.609999999999999
+            - 9.300000000000002
+            - 0.22000000000000114
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - N
+            - 8
+            - 10.139999999999999
+            - 10.000000000000002
+            - -0.3299999999999992
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - CA
+            - 8
+            - 9.699999999999998
+            - 11.200000000000001
+            - -1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - C
+            - 8
+            - 10.249999999999998
+            - 12.4
+            - -0.32999999999999896
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - O
+            - 8
+            - 11.79
+            - 12.500000000000002
+            - -0.22000000000000028
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 14.549999999999999
+        y: 0.0
+        z: 0.0
+      id: A4E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - N
+            - 1
+            - 14.11
+            - 12.4
+            - -0.329999999999997
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - CA
+            - 1
+            - 14.549999999999999
+            - 11.200000000000001
+            - -1.2099999999999973
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - C
+            - 1
+            - 13.999999999999998
+            - 10.000000000000002
+            - -0.3299999999999976
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - O
+            - 1
+            - 12.459999999999999
+            - 9.9
+            - -0.21999999999999756
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - N
+            - 2
+            - 14.989999999999998
+            - 9.2
+            - 0.3300000000000023
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - CA
+            - 2
+            - 14.549999999999999
+            - 8.0
+            - 1.2100000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - C
+            - 2
+            - 15.1
+            - 6.8
+            - 0.33000000000000174
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - O
+            - 2
+            - 16.64
+            - 6.7
+            - 0.22000000000000192
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 3
+            - 14.11
+            - 6.000000000000001
+            - -0.3299999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 3
+            - 14.549999999999999
+            - 4.800000000000001
+            - -1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 3
+            - 13.999999999999998
+            - 3.6000000000000005
+            - -0.3299999999999991
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 3
+            - 12.459999999999999
+            - 3.500000000000001
+            - -0.21999999999999917
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 4
+            - 14.989999999999998
+            - 2.8
+            - 0.33000000000000085
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 4
+            - 14.549999999999999
+            - 1.5999999999999992
+            - 1.2100000000000004
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 4
+            - 15.1
+            - 0.3999999999999996
+            - 0.33000000000000035
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 4
+            - 16.64
+            - 0.2999999999999996
+            - 0.22000000000000083
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - N
+            - 5
+            - 14.11
+            - -0.3999999999999996
+            - -0.3300000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - CA
+            - 5
+            - 14.549999999999999
+            - -1.5999999999999992
+            - -1.2100000000000004
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - C
+            - 5
+            - 13.999999999999998
+            - -2.8
+            - -0.3300000000000007
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - O
+            - 5
+            - 12.459999999999999
+            - -2.8999999999999995
+            - -0.22000000000000072
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - N
+            - 6
+            - 14.989999999999998
+            - -3.5999999999999988
+            - 0.3299999999999994
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - CA
+            - 6
+            - 14.549999999999999
+            - -4.799999999999999
+            - 1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - C
+            - 6
+            - 15.099999999999998
+            - -5.999999999999999
+            - 0.3299999999999989
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - O
+            - 6
+            - 16.64
+            - -6.099999999999999
+            - 0.21999999999999978
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - N
+            - 7
+            - 14.11
+            - -6.800000000000002
+            - -0.3300000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - CA
+            - 7
+            - 14.549999999999999
+            - -8.000000000000002
+            - -1.2100000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - C
+            - 7
+            - 13.999999999999998
+            - -9.200000000000001
+            - -0.33000000000000224
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - O
+            - 7
+            - 12.459999999999999
+            - -9.300000000000002
+            - -0.22000000000000228
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - N
+            - 8
+            - 14.989999999999998
+            - -10.000000000000002
+            - 0.32999999999999796
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - CA
+            - 8
+            - 14.549999999999997
+            - -11.200000000000001
+            - 1.2099999999999973
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - C
+            - 8
+            - 15.099999999999998
+            - -12.4
+            - 0.32999999999999746
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - O
+            - 8
+            - 16.64
+            - -12.500000000000002
+            - 0.21999999999999875
+      tilt:
+        x: 180.0
+        y: 0.0
+        z: 0.0
+      type: E
+  - - coordinates:
+        x: 0.0
+        y: 0.0
+        z: 8.0
+      id: B1E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - N
+            - 1
+            - -0.44
+            - 12.4
+            - 7.670000000000003
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - CA
+            - 1
+            - 0.0
+            - 11.200000000000001
+            - 6.790000000000003
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - C
+            - 1
+            - -0.55
+            - 10.000000000000002
+            - 7.670000000000003
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - O
+            - 1
+            - -2.09
+            - 9.9
+            - 7.780000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - N
+            - 2
+            - 0.43999999999999995
+            - 9.2
+            - 8.330000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - CA
+            - 2
+            - -1.4818226269682973e-16
+            - 8.0
+            - 9.21
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - C
+            - 2
+            - 0.55
+            - 6.8
+            - 8.330000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - O
+            - 2
+            - 2.09
+            - 6.7
+            - 8.220000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - N
+            - 3
+            - -0.44
+            - 6.000000000000001
+            - 7.670000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - CA
+            - 3
+            - 0.0
+            - 4.800000000000001
+            - 6.790000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - C
+            - 3
+            - -0.55
+            - 3.6000000000000005
+            - 7.670000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - O
+            - 3
+            - -2.09
+            - 3.500000000000001
+            - 7.780000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 4
+            - 0.4399999999999999
+            - 2.8
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 4
+            - -4.445467880904892e-16
+            - 1.5999999999999992
+            - 9.21
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 4
+            - 0.5499999999999999
+            - 0.3999999999999996
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 4
+            - 2.09
+            - 0.2999999999999996
+            - 8.22
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - N
+            - 5
+            - -0.44
+            - -0.3999999999999996
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - CA
+            - 5
+            - 0.0
+            - -1.5999999999999992
+            - 6.789999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - C
+            - 5
+            - -0.55
+            - -2.8
+            - 7.669999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - O
+            - 5
+            - -2.09
+            - -2.8999999999999995
+            - 7.779999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - N
+            - 6
+            - 0.4399999999999998
+            - -3.5999999999999988
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - CA
+            - 6
+            - -7.409113134841487e-16
+            - -4.799999999999999
+            - 9.209999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - C
+            - 6
+            - 0.5499999999999998
+            - -5.999999999999999
+            - 8.329999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - O
+            - 6
+            - 2.09
+            - -6.099999999999999
+            - 8.22
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - N
+            - 7
+            - -0.44
+            - -6.800000000000002
+            - 7.669999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - CA
+            - 7
+            - 0.0
+            - -8.000000000000002
+            - 6.789999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - C
+            - 7
+            - -0.55
+            - -9.200000000000001
+            - 7.669999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - O
+            - 7
+            - -2.09
+            - -9.300000000000002
+            - 7.779999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - N
+            - 8
+            - 0.4399999999999997
+            - -10.000000000000002
+            - 8.329999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - CA
+            - 8
+            - -1.037275838877808e-15
+            - -11.200000000000001
+            - 9.209999999999997
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - C
+            - 8
+            - 0.5499999999999997
+            - -12.4
+            - 8.329999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - O
+            - 8
+            - 2.09
+            - -12.500000000000002
+            - 8.219999999999999
+      tilt:
+        x: 180.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 4.85
+        y: 0.0
+        z: 8.0
+      id: B2E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - N
+            - 1
+            - 4.409999999999999
+            - -12.4
+            - 8.329999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - CA
+            - 1
+            - 4.85
+            - -11.200000000000001
+            - 9.209999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - C
+            - 1
+            - 4.3
+            - -10.000000000000002
+            - 8.329999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - O
+            - 1
+            - 2.76
+            - -9.9
+            - 8.219999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - N
+            - 2
+            - 5.289999999999999
+            - -9.2
+            - 7.669999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - CA
+            - 2
+            - 4.85
+            - -8.0
+            - 6.789999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - C
+            - 2
+            - 5.3999999999999995
+            - -6.8
+            - 7.669999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - O
+            - 2
+            - 6.9399999999999995
+            - -6.7
+            - 7.779999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - N
+            - 3
+            - 4.409999999999999
+            - -6.000000000000001
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - CA
+            - 3
+            - 4.85
+            - -4.800000000000001
+            - 9.209999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - C
+            - 3
+            - 4.3
+            - -3.6000000000000005
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - O
+            - 3
+            - 2.76
+            - -3.500000000000001
+            - 8.219999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - N
+            - 4
+            - 5.289999999999999
+            - -2.8
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - CA
+            - 4
+            - 4.849999999999999
+            - -1.5999999999999994
+            - 6.79
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - C
+            - 4
+            - 5.3999999999999995
+            - -0.39999999999999963
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - O
+            - 4
+            - 6.9399999999999995
+            - -0.2999999999999996
+            - 7.779999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - N
+            - 5
+            - 4.409999999999999
+            - 0.39999999999999963
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - CA
+            - 5
+            - 4.85
+            - 1.5999999999999994
+            - 9.21
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - C
+            - 5
+            - 4.3
+            - 2.8
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - O
+            - 5
+            - 2.76
+            - 2.8999999999999995
+            - 8.22
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - N
+            - 6
+            - 5.289999999999999
+            - 3.5999999999999988
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - CA
+            - 6
+            - 4.849999999999999
+            - 4.799999999999999
+            - 6.790000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - C
+            - 6
+            - 5.3999999999999995
+            - 5.999999999999999
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - O
+            - 6
+            - 6.9399999999999995
+            - 6.099999999999999
+            - 7.779999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - N
+            - 7
+            - 4.409999999999999
+            - 6.800000000000002
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - CA
+            - 7
+            - 4.85
+            - 8.000000000000002
+            - 9.21
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - C
+            - 7
+            - 4.3
+            - 9.200000000000001
+            - 8.330000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - O
+            - 7
+            - 2.76
+            - 9.300000000000002
+            - 8.22
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 8
+            - 5.289999999999999
+            - 10.000000000000002
+            - 7.670000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 8
+            - 4.849999999999999
+            - 11.200000000000001
+            - 6.790000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 8
+            - 5.3999999999999995
+            - 12.4
+            - 7.670000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 8
+            - 6.9399999999999995
+            - 12.500000000000002
+            - 7.779999999999999
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 9.7
+        y: 0.0
+        z: 8.0
+      id: B3E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 5
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - N
+            - 1
+            - 9.26
+            - 7.6000000000000005
+            - 7.670000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - CA
+            - 1
+            - 9.7
+            - 6.4
+            - 6.790000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - C
+            - 1
+            - 9.149999999999999
+            - 5.2
+            - 7.670000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - O
+            - 1
+            - 7.609999999999999
+            - 5.1000000000000005
+            - 7.780000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 2
+            - 10.139999999999999
+            - 4.4
+            - 8.330000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 2
+            - 9.7
+            - 3.2
+            - 9.21
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 2
+            - 10.25
+            - 2.0
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 2
+            - 11.79
+            - 1.9000000000000001
+            - 8.22
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - N
+            - 3
+            - 9.26
+            - 1.2
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - CA
+            - 3
+            - 9.7
+            - 2.9636452539365946e-16
+            - 6.79
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - C
+            - 3
+            - 9.149999999999999
+            - -1.2
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - O
+            - 3
+            - 7.609999999999999
+            - -1.3
+            - 7.779999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 4
+            - 10.139999999999999
+            - -2.000000000000001
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 4
+            - 9.7
+            - -3.200000000000001
+            - 9.209999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 4
+            - 10.25
+            - -4.400000000000001
+            - 8.329999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 4
+            - 11.79
+            - -4.500000000000001
+            - 8.219999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 5
+            - 9.26
+            - -5.2
+            - 7.669999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 5
+            - 9.7
+            - -6.4
+            - 6.789999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 5
+            - 9.149999999999999
+            - -7.6000000000000005
+            - 7.669999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 5
+            - 7.609999999999999
+            - -7.7
+            - 7.7799999999999985
+      tilt:
+        x: 180.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 14.549999999999999
+        y: 0.0
+        z: 8.0
+      id: B4E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 5
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - N
+            - 1
+            - 14.11
+            - -7.6000000000000005
+            - 8.329999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - CA
+            - 1
+            - 14.549999999999999
+            - -6.4
+            - 9.209999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - C
+            - 1
+            - 13.999999999999998
+            - -5.2
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - O
+            - 1
+            - 12.459999999999999
+            - -5.1000000000000005
+            - 8.219999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - N
+            - 2
+            - 14.989999999999998
+            - -4.4
+            - 7.669999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - CA
+            - 2
+            - 14.549999999999999
+            - -3.2
+            - 6.789999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - C
+            - 2
+            - 15.1
+            - -2.0
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - O
+            - 2
+            - 16.64
+            - -1.9000000000000001
+            - 7.779999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - N
+            - 3
+            - 14.11
+            - -1.2
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - CA
+            - 3
+            - 14.549999999999999
+            - -1.4818226269682973e-16
+            - 9.21
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - C
+            - 3
+            - 13.999999999999998
+            - 1.2
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - O
+            - 3
+            - 12.459999999999999
+            - 1.3
+            - 8.22
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 4
+            - 14.989999999999998
+            - 2.000000000000001
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 4
+            - 14.549999999999999
+            - 3.200000000000001
+            - 6.790000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 4
+            - 15.1
+            - 4.400000000000001
+            - 7.67
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 4
+            - 16.64
+            - 4.500000000000001
+            - 7.779999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - N
+            - 5
+            - 14.11
+            - 5.2
+            - 8.33
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - CA
+            - 5
+            - 14.549999999999999
+            - 6.4
+            - 9.21
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - C
+            - 5
+            - 13.999999999999998
+            - 7.6000000000000005
+            - 8.330000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - O
+            - 5
+            - 12.459999999999999
+            - 7.7
+            - 8.22
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+  connectivity:
+  - - A1E
+    - B1E
+    - A3E
+    - B3E
+    - B4E
+    - A4E
+    - B2E
+    - A2E
+metadata:
+  bin: mid
+  corrections: []
+  equivalent_connectivities:
+    others:
+    - A1E.B1E.A3E.B3E.B4E.A4E.B2E.A2E
+    representative: true
+  imaster: {}

@@ -1,0 +1,2 @@
+rmsd,pdb,chain,match,abego,3mers,9mers,loop,loop_length,length_count
+1.6913,1pgx,A,"[(27, 43), (45, 52)]",BAAAAAAAAAAAAAAAGBBBBBBBBA,/work/lpdi/databases/frags/pg/1pgx_A.200.3mers.gz,/work/lpdi/databases/frags/pg/1pgx_A.200.9mers.gz,B,1,4

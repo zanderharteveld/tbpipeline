@@ -1,0 +1,44 @@
+configuration:
+  name: srch1PGX
+  user: hartevel
+  defaults:
+    length:
+      H: 13
+      E: 7
+    distance:
+      aa: 10.0
+      ab: 10.0
+      bb_pair: 4.85
+      bb_stack: 9.0
+      max_loop: 18.97
+      loop_step: 3.2
+  relative: true
+  reoriented: false
+  flip_first: false
+  protocols:
+  - {}
+  comments:
+  - 0+untagged.241.gd67e476
+topology:
+  architecture:
+  - - id: A1E
+      length: 8
+      type: E
+    - id: A2E
+      length: 8
+      type: E
+    - id: A3E
+      length: 8
+      type: E
+    - id: A4E
+      length: 8
+      type: E
+  - - id: B1H
+      length: 17
+      type: H
+  connectivity:
+  - - A3E
+    - A4E
+    - B1H
+    - A1E
+    - A2E

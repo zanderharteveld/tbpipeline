@@ -1,0 +1,2 @@
+rmsd,pdb,chain,match,abego,3mers,9mers,loop,loop_length,length_count
+1.1787,1fhg,A,"[(55, 59), (62, 66)]",BBBBBAAGBBBB,/work/lpdi/databases/frags/fh/1fhg_A.200.3mers.gz,/work/lpdi/databases/frags/fh/1fhg_A.200.9mers.gz,AA,2,1

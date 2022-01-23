@@ -1,0 +1,143 @@
+configuration:
+  name: srch3SD202
+  user: hartevel
+  defaults:
+    length:
+      H: 13
+      E: 7
+    distance:
+      aa: 10.0
+      ab: 11.0
+      bb_pair: 4.85
+      bb_stack: 8.0
+      max_loop: 18.97
+      loop_step: 3.2
+  relative: false
+  reoriented: false
+  flip_first: false
+  protocols:
+  - {}
+  comments:
+  - 0+untagged.198.g9307103.dirty
+topology:
+  architecture:
+  - - coordinates:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      id: A1E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 4.85
+        y: 0.0
+        z: 0.0
+      id: A2E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 9.7
+        y: 0.0
+        z: 0.0
+      id: A3E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 14.549999999999999
+        y: 0.0
+        z: 0.0
+      id: A4E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 5
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+  - - coordinates:
+        x: 2.425
+        y: 0.0
+        z: 8.0
+      id: B1E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 7.2749999999999995
+        y: 0.0
+        z: 8.0
+      id: B2E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 12.125
+        y: 0.0
+        z: 8.0
+      id: B3E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+  connectivity:
+  - - B1E
+    - B2E
+    - A3E
+    - A4E
+    - B3E
+    - A2E
+    - A1E

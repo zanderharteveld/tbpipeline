@@ -1,0 +1,6 @@
+rmsd,pdb,chain,match,abego,3mers,9mers,loop,loop_length,length_count
+0.9751200000000001,2ojl,A,"[(1, 8), (14, 26)]",BBBBBBBBBAAAGAAAAAAAAAAAAA,/work/lpdi/databases/frags/oj/2ojl_A.200.3mers.gz,/work/lpdi/databases/frags/oj/2ojl_A.200.9mers.gz,BAAAG,5,7
+1.3181,3h79,A,"[(21, 28), (34, 46)]",BBBBBBBBBAABAAAAAAAAAAAAAA,/work/lpdi/databases/frags/h7/3h79_A.200.3mers.gz,/work/lpdi/databases/frags/h7/3h79_A.200.9mers.gz,BAABA,5,7
+1.7311,3vfi,A,"[(17, 24), (30, 42)]",BBBBBBBBBABBAAAAAAAAAAAAAA,/work/lpdi/databases/frags/vf/3vfi_A.200.3mers.gz,/work/lpdi/databases/frags/vf/3vfi_A.200.9mers.gz,BABBA,5,7
+1.7556,2b4a,A,"[(0, 7), (13, 25)]",EBBBBBBBBABAAAAAAAAAAAAAAG,/work/lpdi/databases/frags/b4/2b4a_A.200.3mers.gz,/work/lpdi/databases/frags/b4/2b4a_A.200.9mers.gz,BABAA,5,7
+2.3634,2b4a,A,"[(47, 54), (60, 72)]",BABBBBBAABAABBAAAAAAAAAABA,/work/lpdi/databases/frags/b4/2b4a_A.200.3mers.gz,/work/lpdi/databases/frags/b4/2b4a_A.200.9mers.gz,ABAAB,5,7

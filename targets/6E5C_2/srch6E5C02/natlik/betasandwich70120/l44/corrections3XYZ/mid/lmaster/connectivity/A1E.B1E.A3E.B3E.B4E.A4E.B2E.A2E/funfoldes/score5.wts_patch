@@ -1,0 +1,15 @@
+env     = 1.0
+pair    = 1.0
+cbeta   = 0.25
+cenpack = 0.5
+rg      = 0.0
+vdw     = 1.0
+rsigma  = 1.17
+sheet   = 1.17
+ss_pair = 1.17
+hs_pair = 1.17
+hbond_sr_bb = 1.17
+hbond_lr_bb = 2.0
+angle_constraint = 0.3
+dihedral_constraint = 0.3
+STRAND_STRAND_WEIGHTS 1 3 

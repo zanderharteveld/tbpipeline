@@ -1,0 +1,7 @@
+configuration:
+  flip_first: true
+A:
+  xalign: center
+B:
+  xalign: center
+

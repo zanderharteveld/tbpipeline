@@ -1,0 +1,29 @@
+cartoon automatic
+set cartoon_loop_radius, 0.3
+set cartoon_side_chain_helper, 1
+set cartoon_discrete_colors, 1
+bg_color white
+set ray_opaque_background, off
+set ray_texture, 1
+set ray_shadows, 0
+set antialias, 2
+set max_threads, 4
+set specular, 0
+set hash_max, 600
+set cartoon_gap_cutoff, 0
+set spec_reflect, 0
+set dash_width, 4
+
+#make_axis XYZ, size=20
+#plane4points planeXY, [0,0,0], [20,0,0], [20,20,0], [0, 20,0], {'ALPHA': 0.1}
+#plane4points planeXZ, [0,0,0], [20,0,0], [20,0,20], [0, 0,20], {'ALPHA': 0.1}
+#plane4points planeYZ, [0,0,0], [0,20,0], [0,20,20], [0, 0,20], {'ALPHA': 0.1}
+
+#front view
+set_view (\
+     0.908664882,   -0.060319595,    0.413092732,\
+     0.002964430,    0.990408301,    0.138095677,\
+    -0.417463481,   -0.124262363,    0.900134265,\
+    -0.000245575,   -0.000036813, -130.756744385,\
+     7.131403446,    5.370431423,    2.687756777,\
+    15.426166534,  246.065902710,  -20.000000000 )

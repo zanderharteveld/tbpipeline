@@ -1,0 +1,2 @@
+rmsd,pdb,chain,match,abego,3mers,9mers,loop,loop_length,length_count
+1.0749,1ze3,D,"[(89, 96), (99, 106)]",GBBBBBBAAAGBBBBBBB,/work/lpdi/databases/frags/ze/1ze3_D.200.3mers.gz,/work/lpdi/databases/frags/ze/1ze3_D.200.9mers.gz,AA,2,9

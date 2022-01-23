@@ -1,0 +1,160 @@
+configuration:
+  name: srch2N75
+  user: hartevel
+  defaults:
+    length:
+      H: 13
+      E: 7
+    distance:
+      aa: 10.0
+      ab: 10.0
+      bb_pair: 4.85
+      bb_stack: 9.0
+      max_loop: 18.97
+      loop_step: 3.2
+  relative: false
+  reoriented: false
+  flip_first: false
+  protocols:
+  - {}
+  comments:
+  - 0+untagged.241.gd67e476.dirty
+topology:
+  architecture:
+  - - coordinates:
+        x: 2.2749999999999995
+        y: 0.0
+        z: 0.0
+      id: A1H
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 13
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: H
+    - coordinates:
+        x: 12.274999999999999
+        y: 0.0
+        z: 0.0
+      id: A2H
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 13
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: H
+  - - coordinates:
+        x: 0.0
+        y: 0.0
+        z: 10.0
+      id: B1E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 4.85
+        y: 0.0
+        z: 10.0
+      id: B2E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 9.7
+        y: 0.0
+        z: 10.0
+      id: B3E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 14.549999999999999
+        y: 0.0
+        z: 10.0
+      id: B4E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+  - - coordinates:
+        x: 2.2749999999999995
+        y: 0.0
+        z: 20.0
+      id: C1H
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 10
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: H
+    - coordinates:
+        x: 12.274999999999999
+        y: 0.0
+        z: 20.0
+      id: C2H
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 10
+      metadata: {}
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: H
+  connectivity:
+  - - B3E
+    - C2H
+    - B4E
+    - A2H
+    - B2E
+    - A1H
+    - B1E
+    - C1H

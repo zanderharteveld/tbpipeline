@@ -1,0 +1,56 @@
+configuration:
+  name: srch6E5C02
+  user: hartevel
+  defaults:
+    length:
+      H: 13
+      E: 7
+    distance:
+      aa: 10.0
+      ab: 11.0
+      bb_pair: 4.85
+      bb_stack: 8.0
+      max_loop: 18.97
+      loop_step: 3.2
+  relative: true
+  reoriented: false
+  flip_first: false
+  protocols:
+  - {}
+  comments:
+  - 0+untagged.198.g9307103.dirty
+topology:
+  architecture:
+  - - id: A1E
+      length: 8
+      type: E
+    - id: A2E
+      length: 8
+      type: E
+    - id: A3E
+      length: 8
+      type: E
+    - id: A4E
+      length: 8
+      type: E
+  - - id: B1E
+      length: 8
+      type: E
+    - id: B2E
+      length: 8
+      type: E
+    - id: B3E
+      length: 5
+      type: E
+    - id: B4E
+      length: 5
+      type: E
+  connectivity:
+  - - A1E
+    - B1E
+    - A3E
+    - B3E
+    - B4E
+    - A4E
+    - B2E
+    - A2E

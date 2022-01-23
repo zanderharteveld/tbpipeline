@@ -1,0 +1,1 @@
+{"loop_length": 2, "abego": ["BB", "AA", "AB"], "edges": {"ini": 38, "end": 60, "sse1": 13, "loop": 2, "sse2": 8}, "fragfiles": ["srch2N75/naive/connectivity/B3E.C2H.B4E.A2H.B2E.A1H.B1E.C1H/loop_master/loop04/loop_master.jump04.200.3mers", "srch2N75/naive/connectivity/B3E.C2H.B4E.A2H.B2E.A1H.B1E.C1H/loop_master/loop04/loop_master.jump04.200.9mers"], "match_count": 1173}

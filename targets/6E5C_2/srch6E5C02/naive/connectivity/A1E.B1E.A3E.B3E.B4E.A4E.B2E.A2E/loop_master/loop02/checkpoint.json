@@ -1,0 +1,1 @@
+{"loop_length": 4, "abego": ["BABB", "EEAB", "BBAB"], "edges": {"ini": 11, "end": 30, "sse1": 8, "loop": 4, "sse2": 8}, "fragfiles": ["srch6E5C02/naive/connectivity/A1E.B1E.A3E.B3E.B4E.A4E.B2E.A2E/loop_master/loop02/loop_master.jump02.200.3mers", "srch6E5C02/naive/connectivity/A1E.B1E.A3E.B3E.B4E.A4E.B2E.A2E/loop_master/loop02/loop_master.jump02.200.9mers"], "match_count": 2557}

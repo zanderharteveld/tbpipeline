@@ -1,0 +1,3 @@
+rmsd,pdb,chain,match,abego,3mers,9mers,loop,loop_length,length_count
+0.99902,1vr7,A,"[(62, 69), (72, 79)]",BBBBBBBAAAGBBBBBBB,/work/lpdi/databases/frags/vr/1vr7_A.200.3mers.gz,/work/lpdi/databases/frags/vr/1vr7_A.200.9mers.gz,AA,2,4
+2.1372,1vr7,A,"[(40, 47), (50, 57)]",ABBBBBBBOOBEBBBBBB,/work/lpdi/databases/frags/vr/1vr7_A.200.3mers.gz,/work/lpdi/databases/frags/vr/1vr7_A.200.9mers.gz,OO,2,4

@@ -1,0 +1,56 @@
+configuration:
+  name: srch2N75
+  user: hartevel
+  defaults:
+    length:
+      H: 13
+      E: 7
+    distance:
+      aa: 10.0
+      ab: 10.0
+      bb_pair: 4.85
+      bb_stack: 9.0
+      max_loop: 18.97
+      loop_step: 3.2
+  relative: true
+  reoriented: false
+  flip_first: false
+  protocols:
+  - {}
+  comments:
+  - 0+untagged.241.gd67e476.dirty
+topology:
+  architecture:
+  - - id: A1H
+      length: 13
+      type: H
+    - id: A2H
+      length: 13
+      type: H
+  - - id: B1E
+      length: 8
+      type: E
+    - id: B2E
+      length: 8
+      type: E
+    - id: B3E
+      length: 8
+      type: E
+    - id: B4E
+      length: 8
+      type: E
+  - - id: C1H
+      length: 10
+      type: H
+    - id: C2H
+      length: 10
+      type: H
+  connectivity:
+  - - B3E
+    - C2H
+    - B4E
+    - A2H
+    - B2E
+    - A1H
+    - B1E
+    - C1H

@@ -1,0 +1,7303 @@
+configuration:
+  name: srch1PGX_naive
+  user: hartevel
+  defaults:
+    length:
+      H: 13
+      E: 7
+    distance:
+      aa: 10.0
+      ab: 10.0
+      bb_pair: 4.85
+      bb_stack: 9.0
+      max_loop: 18.97
+      loop_step: 3.2
+  relative: false
+  reoriented: true
+  flip_first: false
+  protocols:
+  - name: nomenclator
+    status: true
+    subnames:
+    - naive
+  - name: plotter
+    plot_types:
+    - sketchXZ
+    - sketchXY
+    prefix: undirected
+    status: true
+  - connectivity: false
+    name: builder
+    status: true
+  - name: make_topologies
+    status: true
+  - connectivity: true
+    name: builder
+    status: true
+  - name: plotter
+    plot_types:
+    - sketchXZ
+    - sketchXY
+    prefix: directed
+    status: true
+  - name: loop_master
+    rmsd_cut: 3.2
+    status: true
+  - name: fragment_maker
+    protocol: loop_master
+    status: true
+  - name: funfoldes
+    natbias: 5.0
+    nstruct: 5
+    status: true
+  - analysis: geometry
+    name: statistics
+    source: funfoldes
+    stage: folding
+    status: true
+  - analysis: geometry
+    name: statistics
+    source: funfoldes
+    stage: design
+    status: true
+  - analysis: quality
+    metric: molprobity
+    name: statistics
+    source: funfoldes
+    stage: design
+    status: true
+  - analysis: quality
+    metric: proq4
+    name: statistics
+    source: funfoldes
+    stage: design
+    status: true
+  - analysis: quality
+    metric: trRosetta
+    name: statistics
+    source: funfoldes
+    stage: design
+    status: false
+  comments:
+  - 0+untagged.241.gd67e476
+topology:
+  architecture:
+  - - coordinates:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      id: A1E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - &id001 !!python/name:numpy.ndarray ''
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - &id002 !!python/object/apply:numpy.dtype
+            args:
+            - O8
+            - 0
+            - 1
+            state: !!python/tuple
+            - 3
+            - '|'
+            - null
+            - null
+            - null
+            - -1
+            - -1
+            - 63
+          - false
+          - - TRP
+            - N
+            - 1
+            - -0.44
+            - 12.4
+            - -0.329999999999997
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - CA
+            - 1
+            - 0.0
+            - 11.200000000000001
+            - -1.2099999999999973
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - C
+            - 1
+            - -0.55
+            - 10.000000000000002
+            - -0.3299999999999976
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - O
+            - 1
+            - -2.09
+            - 9.9
+            - -0.21999999999999756
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - N
+            - 2
+            - 0.43999999999999995
+            - 9.2
+            - 0.3300000000000023
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - CA
+            - 2
+            - -1.4818226269682973e-16
+            - 8.0
+            - 1.2100000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - C
+            - 2
+            - 0.55
+            - 6.8
+            - 0.33000000000000174
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - O
+            - 2
+            - 2.09
+            - 6.7
+            - 0.22000000000000192
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - N
+            - 3
+            - -0.44
+            - 6.000000000000001
+            - -0.3299999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - CA
+            - 3
+            - 0.0
+            - 4.800000000000001
+            - -1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - C
+            - 3
+            - -0.55
+            - 3.6000000000000005
+            - -0.3299999999999991
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - O
+            - 3
+            - -2.09
+            - 3.500000000000001
+            - -0.21999999999999917
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - N
+            - 4
+            - 0.4399999999999999
+            - 2.8
+            - 0.33000000000000085
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - CA
+            - 4
+            - -4.445467880904892e-16
+            - 1.5999999999999992
+            - 1.2100000000000004
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - C
+            - 4
+            - 0.5499999999999999
+            - 0.3999999999999996
+            - 0.33000000000000035
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - O
+            - 4
+            - 2.09
+            - 0.2999999999999996
+            - 0.22000000000000083
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - N
+            - 5
+            - -0.44
+            - -0.3999999999999996
+            - -0.3300000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - CA
+            - 5
+            - 0.0
+            - -1.5999999999999992
+            - -1.2100000000000004
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - C
+            - 5
+            - -0.55
+            - -2.8
+            - -0.3300000000000007
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - CYS
+            - O
+            - 5
+            - -2.09
+            - -2.8999999999999995
+            - -0.22000000000000072
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - N
+            - 6
+            - 0.4399999999999998
+            - -3.5999999999999988
+            - 0.3299999999999994
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - CA
+            - 6
+            - -7.409113134841487e-16
+            - -4.799999999999999
+            - 1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - C
+            - 6
+            - 0.5499999999999998
+            - -5.999999999999999
+            - 0.3299999999999989
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - O
+            - 6
+            - 2.09
+            - -6.099999999999999
+            - 0.21999999999999978
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - N
+            - 7
+            - -0.44
+            - -6.800000000000002
+            - -0.3300000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - CA
+            - 7
+            - 0.0
+            - -8.000000000000002
+            - -1.2100000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - C
+            - 7
+            - -0.55
+            - -9.200000000000001
+            - -0.33000000000000224
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - O
+            - 7
+            - -2.09
+            - -9.300000000000002
+            - -0.22000000000000228
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - N
+            - 8
+            - 0.4399999999999997
+            - -10.000000000000002
+            - 0.32999999999999796
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - CA
+            - 8
+            - -1.037275838877808e-15
+            - -11.200000000000001
+            - 1.2099999999999973
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - C
+            - 8
+            - 0.5499999999999997
+            - -12.4
+            - 0.32999999999999746
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - VAL
+            - O
+            - 8
+            - 2.09
+            - -12.500000000000002
+            - 0.21999999999999875
+      tilt:
+        x: 180.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 4.85
+        y: 0.0
+        z: 0.0
+      id: A2E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - N
+            - 1
+            - 4.409999999999999
+            - -12.4
+            - 0.3299999999999985
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - CA
+            - 1
+            - 4.85
+            - -11.200000000000001
+            - 1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - C
+            - 1
+            - 4.3
+            - -10.000000000000002
+            - 0.3299999999999988
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - O
+            - 1
+            - 2.76
+            - -9.9
+            - 0.21999999999999878
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - N
+            - 2
+            - 5.289999999999999
+            - -9.2
+            - -0.3300000000000012
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - CA
+            - 2
+            - 4.85
+            - -8.0
+            - -1.2100000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - C
+            - 2
+            - 5.3999999999999995
+            - -6.8
+            - -0.3300000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - O
+            - 2
+            - 6.9399999999999995
+            - -6.7
+            - -0.22000000000000108
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - N
+            - 3
+            - 4.409999999999999
+            - -6.000000000000001
+            - 0.3299999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - CA
+            - 3
+            - 4.85
+            - -4.800000000000001
+            - 1.2099999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - C
+            - 3
+            - 4.3
+            - -3.6000000000000005
+            - 0.32999999999999957
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - O
+            - 3
+            - 2.76
+            - -3.500000000000001
+            - 0.21999999999999958
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 4
+            - 5.289999999999999
+            - -2.8
+            - -0.3300000000000005
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 4
+            - 4.849999999999999
+            - -1.5999999999999994
+            - -1.2100000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 4
+            - 5.3999999999999995
+            - -0.39999999999999963
+            - -0.3300000000000003
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 4
+            - 6.9399999999999995
+            - -0.2999999999999996
+            - -0.2200000000000008
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - N
+            - 5
+            - 4.409999999999999
+            - 0.39999999999999963
+            - 0.33000000000000007
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - CA
+            - 5
+            - 4.85
+            - 1.5999999999999994
+            - 1.2100000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - C
+            - 5
+            - 4.3
+            - 2.8
+            - 0.33000000000000035
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - O
+            - 5
+            - 2.76
+            - 2.8999999999999995
+            - 0.22000000000000036
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - N
+            - 6
+            - 5.289999999999999
+            - 3.5999999999999988
+            - -0.32999999999999985
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - CA
+            - 6
+            - 4.849999999999999
+            - 4.799999999999999
+            - -1.2099999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - C
+            - 6
+            - 5.3999999999999995
+            - 5.999999999999999
+            - -0.3299999999999996
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - O
+            - 6
+            - 6.9399999999999995
+            - 6.099999999999999
+            - -0.22000000000000053
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - N
+            - 7
+            - 4.409999999999999
+            - 6.800000000000002
+            - 0.33000000000000085
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - CA
+            - 7
+            - 4.85
+            - 8.000000000000002
+            - 1.2100000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - C
+            - 7
+            - 4.3
+            - 9.200000000000001
+            - 0.3300000000000011
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - O
+            - 7
+            - 2.76
+            - 9.300000000000002
+            - 0.22000000000000114
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - N
+            - 8
+            - 5.289999999999999
+            - 10.000000000000002
+            - -0.3299999999999992
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - CA
+            - 8
+            - 4.849999999999999
+            - 11.200000000000001
+            - -1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - C
+            - 8
+            - 5.3999999999999995
+            - 12.4
+            - -0.32999999999999896
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - O
+            - 8
+            - 6.9399999999999995
+            - 12.500000000000002
+            - -0.22000000000000028
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 9.7
+        y: 0.0
+        z: 0.0
+      id: A3E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - N
+            - 1
+            - 9.26
+            - -12.4
+            - 0.3299999999999985
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - CA
+            - 1
+            - 9.7
+            - -11.200000000000001
+            - 1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - C
+            - 1
+            - 9.149999999999999
+            - -10.000000000000002
+            - 0.3299999999999988
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - O
+            - 1
+            - 7.609999999999999
+            - -9.9
+            - 0.21999999999999878
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - N
+            - 2
+            - 10.139999999999999
+            - -9.2
+            - -0.3300000000000012
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - CA
+            - 2
+            - 9.7
+            - -8.0
+            - -1.2100000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - C
+            - 2
+            - 10.25
+            - -6.8
+            - -0.3300000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - O
+            - 2
+            - 11.79
+            - -6.7
+            - -0.22000000000000108
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 3
+            - 9.26
+            - -6.000000000000001
+            - 0.3299999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 3
+            - 9.7
+            - -4.800000000000001
+            - 1.2099999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 3
+            - 9.149999999999999
+            - -3.6000000000000005
+            - 0.32999999999999957
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 3
+            - 7.609999999999999
+            - -3.500000000000001
+            - 0.21999999999999958
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 4
+            - 10.139999999999999
+            - -2.8
+            - -0.3300000000000005
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 4
+            - 9.7
+            - -1.5999999999999994
+            - -1.2100000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 4
+            - 10.25
+            - -0.39999999999999963
+            - -0.3300000000000003
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 4
+            - 11.79
+            - -0.2999999999999996
+            - -0.2200000000000008
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - N
+            - 5
+            - 9.26
+            - 0.39999999999999963
+            - 0.33000000000000007
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - CA
+            - 5
+            - 9.7
+            - 1.5999999999999994
+            - 1.2100000000000002
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - C
+            - 5
+            - 9.149999999999999
+            - 2.8
+            - 0.33000000000000035
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - O
+            - 5
+            - 7.609999999999999
+            - 2.8999999999999995
+            - 0.22000000000000036
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 6
+            - 10.139999999999999
+            - 3.5999999999999988
+            - -0.32999999999999985
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 6
+            - 9.7
+            - 4.799999999999999
+            - -1.2099999999999993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 6
+            - 10.25
+            - 5.999999999999999
+            - -0.3299999999999996
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 6
+            - 11.79
+            - 6.099999999999999
+            - -0.22000000000000053
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - N
+            - 7
+            - 9.26
+            - 6.800000000000002
+            - 0.33000000000000085
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - CA
+            - 7
+            - 9.7
+            - 8.000000000000002
+            - 1.2100000000000009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - C
+            - 7
+            - 9.149999999999999
+            - 9.200000000000001
+            - 0.3300000000000011
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - O
+            - 7
+            - 7.609999999999999
+            - 9.300000000000002
+            - 0.22000000000000114
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - N
+            - 8
+            - 10.139999999999999
+            - 10.000000000000002
+            - -0.3299999999999992
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - CA
+            - 8
+            - 9.699999999999998
+            - 11.200000000000001
+            - -1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - C
+            - 8
+            - 10.249999999999998
+            - 12.4
+            - -0.32999999999999896
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - SER
+            - O
+            - 8
+            - 11.79
+            - 12.500000000000002
+            - -0.22000000000000028
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: E
+    - coordinates:
+        x: 14.549999999999999
+        y: 0.0
+        z: 0.0
+      id: A4E
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 8
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - N
+            - 1
+            - 14.11
+            - 12.4
+            - -0.329999999999997
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - CA
+            - 1
+            - 14.549999999999999
+            - 11.200000000000001
+            - -1.2099999999999973
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - C
+            - 1
+            - 13.999999999999998
+            - 10.000000000000002
+            - -0.3299999999999976
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - MET
+            - O
+            - 1
+            - 12.459999999999999
+            - 9.9
+            - -0.21999999999999756
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - N
+            - 2
+            - 14.989999999999998
+            - 9.2
+            - 0.3300000000000023
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - CA
+            - 2
+            - 14.549999999999999
+            - 8.0
+            - 1.2100000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - C
+            - 2
+            - 15.1
+            - 6.8
+            - 0.33000000000000174
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - PHE
+            - O
+            - 2
+            - 16.64
+            - 6.7
+            - 0.22000000000000192
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 3
+            - 14.11
+            - 6.000000000000001
+            - -0.3299999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 3
+            - 14.549999999999999
+            - 4.800000000000001
+            - -1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 3
+            - 13.999999999999998
+            - 3.6000000000000005
+            - -0.3299999999999991
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 3
+            - 12.459999999999999
+            - 3.500000000000001
+            - -0.21999999999999917
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - N
+            - 4
+            - 14.989999999999998
+            - 2.8
+            - 0.33000000000000085
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - CA
+            - 4
+            - 14.549999999999999
+            - 1.5999999999999992
+            - 1.2100000000000004
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - C
+            - 4
+            - 15.1
+            - 0.3999999999999996
+            - 0.33000000000000035
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - O
+            - 4
+            - 16.64
+            - 0.2999999999999996
+            - 0.22000000000000083
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - N
+            - 5
+            - 14.11
+            - -0.3999999999999996
+            - -0.3300000000000001
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - CA
+            - 5
+            - 14.549999999999999
+            - -1.5999999999999992
+            - -1.2100000000000004
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - C
+            - 5
+            - 13.999999999999998
+            - -2.8
+            - -0.3300000000000007
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ASN
+            - O
+            - 5
+            - 12.459999999999999
+            - -2.8999999999999995
+            - -0.22000000000000072
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - N
+            - 6
+            - 14.989999999999998
+            - -3.5999999999999988
+            - 0.3299999999999994
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - CA
+            - 6
+            - 14.549999999999999
+            - -4.799999999999999
+            - 1.2099999999999986
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - C
+            - 6
+            - 15.099999999999998
+            - -5.999999999999999
+            - 0.3299999999999989
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - O
+            - 6
+            - 16.64
+            - -6.099999999999999
+            - 0.21999999999999978
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - N
+            - 7
+            - 14.11
+            - -6.800000000000002
+            - -0.3300000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - CA
+            - 7
+            - 14.549999999999999
+            - -8.000000000000002
+            - -1.2100000000000017
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - C
+            - 7
+            - 13.999999999999998
+            - -9.200000000000001
+            - -0.33000000000000224
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TYR
+            - O
+            - 7
+            - 12.459999999999999
+            - -9.300000000000002
+            - -0.22000000000000228
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - N
+            - 8
+            - 14.989999999999998
+            - -10.000000000000002
+            - 0.32999999999999796
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - CA
+            - 8
+            - 14.549999999999997
+            - -11.200000000000001
+            - 1.2099999999999973
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - C
+            - 8
+            - 15.099999999999998
+            - -12.4
+            - 0.32999999999999746
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - O
+            - 8
+            - 16.64
+            - -12.500000000000002
+            - 0.21999999999999875
+      tilt:
+        x: 180.0
+        y: 0.0
+        z: 0.0
+      type: E
+  - - coordinates:
+        x: 7.2749999999999995
+        y: 0.0
+        z: 10.0
+      id: B1H
+      layer_tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      length: 17
+      metadata:
+        atoms:
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - N
+            - 1
+            - 8.596
+            - -12.841
+            - 10.710999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - CA
+            - 1
+            - 9.575
+            - -12.0
+            - 9.999999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - C
+            - 1
+            - 8.850999999999999
+            - -10.971
+            - 9.129999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ILE
+            - O
+            - 1
+            - 9.186
+            - -9.751999999999999
+            - 9.129
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - N
+            - 2
+            - 7.745809069693665
+            - -11.341
+            - 8.575605103949684
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - CA
+            - 2
+            - 6.87560919136606
+            - -10.5
+            - 7.734942168071921
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - C
+            - 2
+            - 6.144547726876296
+            - -9.471
+            - 8.599016895822988
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - O
+            - 2
+            - 6.085390779604863
+            - -8.251999999999999
+            - 8.269279946741566
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - N
+            - 3
+            - 5.790489726037264
+            - -9.841
+            - 9.783687155954427
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - CA
+            - 3
+            - 5.113706972192411
+            - -9.0
+            - 10.786646329649036
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - C
+            - 3
+            - 6.09160195433474
+            - -7.971
+            - 11.356556325964993
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLU
+            - O
+            - 3
+            - 5.777146946514786
+            - -6.752
+            - 11.472072766599878
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - N
+            - 4
+            - 7.319755937909264
+            - -8.341
+            - 11.499519558399243
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - CA
+            - 4
+            - 8.424999999999999
+            - -7.5
+            - 11.991858428704209
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - C
+            - 4
+            - 8.816442101292461
+            - -6.471
+            - 10.929856036364274
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - O
+            - 4
+            - 8.984808126696246
+            - -5.252
+            - 11.219474546632062
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - N
+            - 5
+            - 8.743966699847299
+            - -6.841
+            - 9.695535166661674
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - CA
+            - 5
+            - 9.03690221917365
+            - -6.0
+            - 8.521588497720959
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - C
+            - 5
+            - 7.92306082192822
+            - -4.971
+            - 8.320508061620503
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - O
+            - 5
+            - 8.179042922763392
+            - -3.7519999999999993
+            - 8.104408167932393
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - N
+            - 6
+            - 6.720077281126958
+            - -5.341
+            - 8.606219968546487
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - CA
+            - 6
+            - 5.5130977808263495
+            - -4.5
+            - 8.521588497720959
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - C
+            - 6
+            - 5.508488737217201
+            - -3.471
+            - 9.653425392647526
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - O
+            - 6
+            - 5.251221061162656
+            - -2.252
+            - 9.438857587845654
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - N
+            - 7
+            - 5.998755937909264
+            - -3.841
+            - 10.788519558399242
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - CA
+            - 7
+            - 6.125
+            - -3.0000000000000004
+            - 11.991858428704209
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - C
+            - 7
+            - 7.240442101292461
+            - -1.9710000000000003
+            - 11.799856036364275
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - O
+            - 7
+            - 7.073808126696246
+            - -0.752
+            - 12.090474546632063
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - N
+            - 8
+            - 8.273157630153634
+            - -2.341
+            - 11.119930062711989
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - CA
+            - 8
+            - 9.436293027807588
+            - -1.5
+            - 10.786646329649038
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - C
+            - 8
+            - 9.053513095051922
+            - -0.47100000000000003
+            - 9.721491165797513
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - GLN
+            - O
+            - 8
+            - 9.368652143158528
+            - 0.7480000000000002
+            - 9.835128221190827
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - N
+            - 9
+            - 8.204587555089695
+            - -0.8409999999999999
+            - 8.822532812592062
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - CA
+            - 9
+            - 7.67439080863394
+            - 2.7738958237543643e-16
+            - 7.734942168071922
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - C
+            - 9
+            - 6.691886782882461
+            - 1.0290000000000001
+            - 8.29686906668253
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - O
+            - 9
+            - 6.749074114647871
+            - 2.2480000000000007
+            - 7.966784821245774
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - N
+            - 10
+            - 5.954
+            - 0.6590000000000001
+            - 9.289
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - CA
+            - 10
+            - 4.975
+            - 1.5
+            - 9.999999999999998
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - C
+            - 10
+            - 5.698999999999999
+            - 2.529
+            - 10.87
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - O
+            - 10
+            - 5.363999999999999
+            - 3.748
+            - 10.870999999999999
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - N
+            - 11
+            - 6.804190930306336
+            - 2.159
+            - 11.424394896050314
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - CA
+            - 11
+            - 7.674390808633941
+            - 2.9999999999999996
+            - 12.265057831928079
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - C
+            - 11
+            - 8.405452273123704
+            - 4.029
+            - 11.40098310417701
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - THR
+            - O
+            - 11
+            - 8.464609220395138
+            - 5.248
+            - 11.730720053258434
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - N
+            - 12
+            - 8.759510273962734
+            - 3.659
+            - 10.216312844045575
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - CA
+            - 12
+            - 9.43629302780759
+            - 4.5
+            - 9.213353670350966
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - C
+            - 12
+            - 8.45839804566526
+            - 5.529
+            - 8.643443674035009
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - HIS
+            - O
+            - 12
+            - 8.772853053485214
+            - 6.748
+            - 8.527927233400124
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - N
+            - 13
+            - 7.230244062090735
+            - 5.159
+            - 8.500480441600757
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - CA
+            - 13
+            - 6.124999999999999
+            - 6.0
+            - 8.008141571295793
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - C
+            - 13
+            - 5.733557898707537
+            - 7.029
+            - 9.070143963635726
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LEU
+            - O
+            - 13
+            - 5.565191873303753
+            - 8.248000000000001
+            - 8.78052545336794
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - N
+            - 14
+            - 5.806033300152699
+            - 6.659
+            - 10.304464833338324
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - CA
+            - 14
+            - 5.513097780826348
+            - 7.5
+            - 11.478411502279037
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - C
+            - 14
+            - 6.626939178071776
+            - 8.529
+            - 11.679491938379497
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - TRP
+            - O
+            - 14
+            - 6.370957077236605
+            - 9.748000000000001
+            - 11.895591832067606
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - N
+            - 15
+            - 7.829922718873039
+            - 8.159
+            - 11.393780031453513
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - CA
+            - 15
+            - 9.036902219173648
+            - 9.0
+            - 11.478411502279041
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - C
+            - 15
+            - 9.041511262782798
+            - 10.029
+            - 10.346574607352476
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ARG
+            - O
+            - 15
+            - 9.298778938837343
+            - 11.248000000000001
+            - 10.561142412154348
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - N
+            - 16
+            - 8.551244062090737
+            - 9.659
+            - 9.211480441600761
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - CA
+            - 16
+            - 8.425000000000004
+            - 10.5
+            - 8.008141571295795
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - C
+            - 16
+            - 7.309557898707542
+            - 11.529
+            - 8.200143963635727
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - LYS
+            - O
+            - 16
+            - 7.476191873303758
+            - 12.748000000000001
+            - 7.90952545336794
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - N
+            - 17
+            - 6.276842369846366
+            - 11.159
+            - 8.880069937288011
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - CA
+            - 17
+            - 5.113706972192411
+            - 12.0
+            - 9.213353670350962
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - C
+            - 17
+            - 5.496486904948076
+            - 13.029
+            - 10.278508834202487
+        - !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 6
+          - *id002
+          - false
+          - - ALA
+            - O
+            - 17
+            - 5.181347856841471
+            - 14.248000000000001
+            - 10.164871778809173
+      tilt:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      type: H
+  connectivity:
+  - - A3E
+    - A4E
+    - B1H
+    - A1E
+    - A2E
+metadata:
+  equivalent_connectivities:
+    others:
+    - A3E.A4E.B1H.A1E.A2E
+    representative: true
+  fragments:
+    files: !!python/tuple
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/fragment_maker/small.198.3mers
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/fragment_maker/large.198.9mers
+    protocol: loop_master
+  funfoldes:
+    cmd:
+      design:
+      - !!python/object/apply:pathlib.PosixPath
+        - /
+        - work
+        - lpdi
+        - users
+        - hartevel
+        - bin
+        - Rosetta_03_2020
+        - main
+        - source
+        - bin
+        - rosetta_scripts.linuxiccrelease
+      - -parser:protocol
+      - &id003 !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - funfoldes_design.xml
+      - -in:file:silent
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/outputs/srch1PGX_naive_${SLURM_ARRAY_TASK_ID}_funfol.silent
+      - -out:prefix
+      - srch1PGX_naive_${SLURM_ARRAY_TASK_ID}_des_
+      - -out:file:silent
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/outputs/srch1PGX_naive_${SLURM_ARRAY_TASK_ID}_des.silent
+      - -nstruct
+      - '5'
+      - -overwrite
+      - -in:ignore_unrecognized_res
+      - -in:ignore_waters
+      - -out:file:silent_struct_type
+      - binary
+      - -out:mute
+      - protocols.abinitio
+      - protocols.moves
+      - core.optimization
+      folding:
+      - !!python/object/apply:pathlib.PosixPath
+        - /
+        - work
+        - lpdi
+        - users
+        - hartevel
+        - bin
+        - Rosetta_03_2020
+        - main
+        - source
+        - bin
+        - rosetta_scripts.linuxiccrelease
+      - -parser:protocol
+      - &id004 !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - funfoldes_fold.xml
+      - -in:file:s
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/template_sketch.pdb
+      - -out:prefix
+      - srch1PGX_naive_${SLURM_ARRAY_TASK_ID}_funfol_
+      - -out:file:silent
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/outputs/srch1PGX_naive_${SLURM_ARRAY_TASK_ID}_funfol.silent
+      - -constraints:cst_weight
+      - '1.0'
+      - -abinitio:stage1_patch
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/score0.wts_patch
+      - -abinitio:stage2_patch
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/score1.wts_patch
+      - -abinitio:stage3a_patch
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/score2.wts_patch
+      - -abinitio:stage3b_patch
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/score5.wts_patch
+      - -abinitio:stage4_patch
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/score3.wts_patch
+      - -abinitio:stage5_patch
+      - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/funfoldes/score3.wts_patch
+      - -nstruct
+      - '1'
+      - -overwrite
+      - -in:ignore_unrecognized_res
+      - -in:ignore_waters
+      - -out:file:silent_struct_type
+      - binary
+      - -out:mute
+      - protocols.abinitio
+      - protocols.moves
+      - core.optimization
+    minisilent:
+      design: !!python/object/apply:pathlib.PosixPath
+      - srch1PGX
+      - naive
+      - connectivity
+      - A3E.A4E.B1H.A1E.A2E
+      - funfoldes
+      - output_des.minisilent.gz
+      folding: !!python/object/apply:pathlib.PosixPath
+      - srch1PGX
+      - naive
+      - connectivity
+      - A3E.A4E.B1H.A1E.A2E
+      - funfoldes
+      - output_funfol.minisilent.gz
+    script:
+      design: *id003
+      folding: *id004
+    silent_files:
+      design:
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_77_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_180_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_54_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_115_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_95_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_129_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_52_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_74_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_160_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_75_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_65_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_83_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_31_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_174_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_172_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_126_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_193_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_51_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_177_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_47_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_21_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_57_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_10_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_36_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_97_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_184_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_73_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_170_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_103_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_120_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_128_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_176_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_60_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_110_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_102_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_194_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_199_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_171_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_28_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_34_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_139_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_123_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_62_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_91_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_59_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_197_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_188_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_182_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_11_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_200_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_143_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_90_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_135_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_50_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_167_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_142_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_93_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_106_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_56_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_16_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_186_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_67_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_12_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_134_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_64_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_2_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_163_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_152_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_9_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_13_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_150_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_122_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_87_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_153_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_24_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_89_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_92_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_82_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_159_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_53_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_69_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_118_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_169_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_43_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_71_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_19_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_154_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_101_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_7_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_17_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_66_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_38_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_98_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_162_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_81_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_94_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_155_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_131_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_70_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_20_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_146_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_15_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_104_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_105_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_96_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_55_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_107_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_117_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_195_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_26_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_100_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_39_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_3_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_88_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_46_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_85_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_192_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_113_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_86_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_138_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_175_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_109_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_111_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_76_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_1_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_164_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_166_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_178_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_140_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_187_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_112_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_121_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_196_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_63_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_61_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_148_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_130_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_8_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_40_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_158_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_161_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_25_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_119_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_151_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_32_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_190_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_33_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_147_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_23_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_137_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_168_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_191_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_29_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_141_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_48_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_181_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_45_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_149_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_14_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_72_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_133_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_42_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_58_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_124_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_99_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_114_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_6_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_198_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_68_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_44_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_145_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_5_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_132_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_179_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_183_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_173_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_80_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_157_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_49_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_79_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_165_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_27_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_185_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_35_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_37_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_30_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_41_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_22_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_125_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_4_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_84_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_189_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_136_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_116_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_144_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_156_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_127_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_78_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_18_des.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_108_des.silent
+      folding:
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_149_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_110_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_186_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_94_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_24_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_161_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_36_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_77_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_96_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_34_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_152_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_140_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_111_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_55_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_60_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_194_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_54_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_187_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_158_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_61_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_179_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_195_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_120_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_9_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_141_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_151_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_142_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_172_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_22_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_43_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_29_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_131_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_185_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_125_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_14_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_53_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_160_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_99_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_62_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_18_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_197_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_180_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_45_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_190_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_40_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_137_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_173_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_85_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_33_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_107_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_97_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_90_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_49_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_91_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_92_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_16_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_88_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_147_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_57_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_76_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_181_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_12_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_101_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_138_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_26_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_112_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_3_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_192_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_80_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_100_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_130_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_143_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_106_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_5_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_200_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_102_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_103_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_83_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_104_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_4_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_146_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_182_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_11_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_74_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_157_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_50_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_73_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_66_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_78_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_41_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_133_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_23_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_32_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_70_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_2_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_52_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_87_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_126_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_47_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_21_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_95_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_169_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_37_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_113_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_150_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_38_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_199_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_13_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_114_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_69_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_64_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_162_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_30_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_193_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_156_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_178_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_118_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_63_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_28_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_19_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_153_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_27_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_154_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_35_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_48_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_8_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_17_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_98_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_165_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_196_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_51_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_81_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_189_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_155_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_1_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_119_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_42_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_129_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_171_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_15_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_198_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_163_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_25_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_184_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_39_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_164_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_93_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_44_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_124_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_58_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_82_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_168_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_65_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_183_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_56_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_67_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_79_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_68_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_176_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_105_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_115_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_136_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_127_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_128_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_72_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_31_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_170_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_59_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_132_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_134_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_123_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_7_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_191_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_10_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_117_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_75_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_108_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_139_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_145_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_116_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_109_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_175_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_84_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_144_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_166_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_89_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_167_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_148_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_188_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_174_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_122_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_159_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_6_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_121_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_20_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_71_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_177_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_46_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_86_funfol.silent
+      - !!python/object/apply:pathlib.PosixPath
+        - srch1PGX
+        - naive
+        - connectivity
+        - A3E.A4E.B1H.A1E.A2E
+        - funfoldes
+        - outputs
+        - srch1PGX_naive_135_funfol.silent
+  loop_fragments:
+  - abego:
+    - AA
+    - OO
+    edges:
+      end: 18
+      ini: 1
+      loop: 2
+      sse1: 8
+      sse2: 8
+    fragfiles:
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/loop_master/loop01/loop_master.jump01.199.3mers
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/loop_master/loop01/loop_master.jump01.199.9mers
+    loop_length: 2
+    match_count: 297
+  - abego:
+    - G
+    - E
+    - A
+    - B
+    edges:
+      end: 36
+      ini: 11
+      loop: 1
+      sse1: 8
+      sse2: 17
+    fragfiles:
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/loop_master/loop02/loop_master.jump02.200.3mers
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/loop_master/loop02/loop_master.jump02.200.9mers
+    loop_length: 1
+    match_count: 28
+  - abego:
+    - BAB
+    - GBA
+    - BBB
+    edges:
+      end: 47
+      ini: 20
+      loop: 3
+      sse1: 17
+      sse2: 8
+    fragfiles:
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/loop_master/loop03/loop_master.jump03.199.3mers
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/loop_master/loop03/loop_master.jump03.199.9mers
+    loop_length: 3
+    match_count: 51
+  - abego:
+    - AA
+    - OO
+    edges:
+      end: 57
+      ini: 40
+      loop: 2
+      sse1: 8
+      sse2: 8
+    fragfiles:
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/loop_master/loop04/loop_master.jump04.199.3mers
+    - srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/loop_master/loop04/loop_master.jump04.199.9mers
+    loop_length: 2
+    match_count: 297
+  loop_lengths:
+  - 2
+  - 1
+  - 3
+  - 2
+  statistic:
+    geometry: srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/statistic/funfoldes_folding/_pdb_files/${SLURM_ARRAY_TASK_ID}
+    quality: srch1PGX/naive/connectivity/A3E.A4E.B1H.A1E.A2E/statistic/funfoldes_design/_pdb_files/${SLURM_ARRAY_TASK_ID}

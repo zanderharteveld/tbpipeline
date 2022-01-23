@@ -1,0 +1,111 @@
+<ROSETTASCRIPTS>
+ <SCOREFXNS>
+  <ScoreFunction name="sfxn_cstdes" weights="ref2015">
+   <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+   <Reweight scoretype="angle_constraint" weight="1.0"/>
+   <Reweight scoretype="dihedral_constraint" weight="1.0"/>
+   <Reweight scoretype="hbond_lr_bb" weight="2.0"/>
+  </ScoreFunction>
+  <ScoreFunction name="sfxn_cstdes_cart" weights="ref2015_cart">
+   <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+   <Reweight scoretype="angle_constraint" weight="1.0"/>
+   <Reweight scoretype="dihedral_constraint" weight="1.0"/>
+   <Reweight scoretype="hbond_lr_bb" weight="2.0"/>
+  </ScoreFunction>
+  <ScoreFunction name="bb_only" weights="empty.wts">
+   <Reweight scoretype="fa_rep" weight="0.1"/>
+   <Reweight scoretype="fa_atr" weight="0.2"/>
+   <Reweight scoretype="hbond_sr_bb" weight="2.0"/>
+   <Reweight scoretype="hbond_lr_bb" weight="2.0"/>
+   <Reweight scoretype="rama_prepro" weight="0.45"/>
+   <Reweight scoretype="omega" weight="0.4"/>
+   <Reweight scoretype="p_aa_pp" weight="0.6"/>
+  </ScoreFunction>
+ </SCOREFXNS>
+ <RESIDUE_SELECTORS>
+  <SecondaryStructure include_terminal_loops="0" minE="1" minH="1" name="sse_cstdes" overlap="0" pose_secstruct="EEEEEEEELLLLHHHHHHHHHHLEEEEEEEELLLLLHHHHHHHHHHHHHLLLLLEEEEEEEELLLLHHHHHHHHHHHHHLEEEEEEEELHHHHHHHHHH" ss="HE" use_dssp="0"/>
+  <Layer name="surface" select_boundary="0" select_core="0" select_surface="1" use_sidechain_neighbors="1"/>
+  <Layer name="boundary" select_boundary="1" select_core="0" select_surface="0" use_sidechain_neighbors="1"/>
+  <Layer name="core" select_boundary="0" select_core="1" select_surface="0" use_sidechain_neighbors="1"/>
+  <SecondaryStructure include_terminal_loops="0" minE="1" minH="1" name="sheet" overlap="0" pose_secstruct="EEEEEEEELLLLHHHHHHHHHHLEEEEEEEELLLLLHHHHHHHHHHHHHLLLLLEEEEEEEELLLLHHHHHHHHHHHHHLEEEEEEEELHHHHHHHHHH" ss="E" use_dssp="0"/>
+  <SecondaryStructure include_terminal_loops="0" minE="1" minH="1" name="entire_helix" overlap="0" pose_secstruct="EEEEEEEELLLLHHHHHHHHHHLEEEEEEEELLLLLHHHHHHHHHHHHHLLLLLEEEEEEEELLLLHHHHHHHHHHHHHLEEEEEEEELHHHHHHHHHH" ss="H" use_dssp="0"/>
+  <SecondaryStructure include_terminal_loops="1" minE="1" minH="1" name="entire_loop" overlap="0" pose_secstruct="EEEEEEEELLLLHHHHHHHHHHLEEEEEEEELLLLLHHHHHHHHHHHHHLLLLLEEEEEEEELLLLHHHHHHHHHHHHHLEEEEEEEELHHHHHHHHHH" ss="L" use_dssp="0"/>
+  <And name="helix_cap" selectors="entire_loop">
+   <PrimarySequenceNeighborhood lower="1" selector="entire_helix" upper="0"/>
+  </And>
+  <And name="helix_start" selectors="entire_helix">
+   <PrimarySequenceNeighborhood lower="0" selector="helix_cap" upper="1"/>
+  </And>
+  <And name="helix" selectors="entire_helix">
+   <Not selector="helix_start"/>
+  </And>
+  <And name="loop" selectors="entire_loop">
+   <Not selector="helix_cap"/>
+  </And>
+  <True name="full_pose"/>
+  <Layer name="surface_cstdes" select_boundary="0" select_core="0" select_surface="1" use_sidechain_neighbors="1"/>
+  <Layer name="boundary_cstdes" select_boundary="1" select_core="0" select_surface="0" use_sidechain_neighbors="1"/>
+  <Layer name="core_cstdes" select_boundary="0" select_core="1" select_surface="0" use_sidechain_neighbors="1"/>
+ </RESIDUE_SELECTORS>
+ <TASKOPERATIONS>
+  <DesignRestrictions name="layer_design">
+   <Action aas="DEHKPQR" selector_logic="surface AND helix_start"/>
+   <Action aas="EHKQR" selector_logic="surface AND helix"/>
+   <Action aas="EHKNQRST" selector_logic="surface AND sheet"/>
+   <Action aas="DEGHKNPQRST" selector_logic="surface AND loop"/>
+   <Action aas="ADEHIKLMNPQRSTVWY" selector_logic="boundary AND helix_start"/>
+   <Action aas="ADEHIKLMNQRSTVWY" selector_logic="boundary AND helix"/>
+   <Action aas="DEFHIKLMNQRSTVWY" selector_logic="boundary AND sheet"/>
+   <Action aas="ADEFGHIKLMNPQRSTVWY" selector_logic="boundary AND loop"/>
+   <Action aas="AFILMPVWY" selector_logic="core AND helix_start"/>
+   <Action aas="AFILMVWY" selector_logic="core AND helix"/>
+   <Action aas="FILMVWY" selector_logic="core AND sheet"/>
+   <Action aas="AFGILMPVWY" selector_logic="core AND loop"/>
+   <Action aas="DNST" selector_logic="helix_cap"/>
+  </DesignRestrictions>
+ </TASKOPERATIONS>
+ <FILTERS>
+  <RmsdFromResidueSelectorFilter confidence="0." name="rmsd_cstdes" query_selector="sse_cstdes" reference_name="eminPose_cstdes" reference_selector="sse_cstdes"/>
+  <PackStat confidence="0." name="pack_cstdes"/>
+  <CavityVolume confidence="0." name="cav_vol_cstdes"/>
+  <SecondaryStructure compute_pose_secstruct_by_dssp="true" confidence="0." name="sse_match_cstdes" ss="EEEEEEEELLLLHHHHHHHHHHLEEEEEEEELLLLLHHHHHHHHHHHHHLLLLLEEEEEEEELLLLHHHHHHHHHHHHHLEEEEEEEELHHHHHHHHHH"/>
+  <ScorePoseSegmentFromResidueSelectorFilter confidence="0" name="bbscore_cstdes" residue_selector="full_pose" scorefxn="bb_only"/>
+ </FILTERS>
+ <MOVERS>
+  <SavePoseMover name="spose_cstdes" reference_name="eminPose_cstdes" restore_pose="0"/>
+  <AddConstraints name="cst_cstdes">
+   <SegmentedAtomPairConstraintGenerator name="cst_seg_cstdes" residue_selector="sse_cstdes">
+    <Outer ca_only="1" max_distance="40" sd="2.0" unweighted="0" use_harmonic="1" weight="1.0"/>
+   </SegmentedAtomPairConstraintGenerator>
+   <!--AutomaticSheetConstraintGenerator name="cst_sheet_cstdes" sd="2.0" distance="6.1" /-->
+  </AddConstraints>
+  <RemoveConstraints constraint_generators="cst_seg_cstdes" name="rm_cstdes"/>
+  <SetSecStructEnergies hss_triplets="1,1-2;2,1-2;1,1-3;2,1-3;3,1-3;4,1-3;3,3-4;4,3-4" name="ssse_cstdes" natbias_hs="5.0" natbias_ss="5.0" scorefxn="sfxn_cstdes" secstruct="EEEEEEEELLLLHHHHHHHHHHLEEEEEEEELLLLLHHHHHHHHHHHHHLLLLLEEEEEEEELLLLHHHHHHHHHHHHHLEEEEEEEELHHHHHHHHHH" ss_pair="1-2.P.99;1-3.P.99;3-4.P.99" use_dssp="0"/>
+  <SetSecStructEnergies hss_triplets="1,1-2;2,1-2;1,1-3;2,1-3;3,1-3;4,1-3;3,3-4;4,3-4" name="ssse_cstdes_cart" natbias_hs="5.0" natbias_ss="5.0" scorefxn="sfxn_cstdes_cart" secstruct="EEEEEEEELLLLHHHHHHHHHHLEEEEEEEELLLLLHHHHHHHHHHHHHLLLLLEEEEEEEELLLLHHHHHHHHHHHHHLEEEEEEEELHHHHHHHHHH" ss_pair="1-2.P.99;1-3.P.99;3-4.P.99" use_dssp="0"/>
+  <FastDesign dualspace="true" name="design_cstdes" ramp_down_constraints="false" relaxscript="MonomerDesign2019" repeats="5" scorefxn="sfxn_cstdes_cart" task_operations="layer_design"/>
+  <FastRelax cartesian="true" name="cst_cstrel" repeats="5" scorefxn="sfxn_cstdes_cart"/>
+  <LabelPoseFromResidueSelectorMover name="labelcore_cstdes" property="CORE" residue_selector="core_cstdes"/>
+  <LabelPoseFromResidueSelectorMover name="labelboundary_cstdes" property="BOUNDARY" residue_selector="boundary_cstdes"/>
+  <LabelPoseFromResidueSelectorMover name="labelsurface_cstdes" property="SURFACE" residue_selector="surface_cstdes"/>
+  <DisplayPoseLabelsMover name="labeldump_cstdes" use_dssp="1" write="1"/>
+  <WriteSSEMover cmd="/work/lpdi/bin/sequence/psipred-4/runpsipred" dssp="1" name="sse_report_cstdes" write_phipsi="1"/>
+ </MOVERS>
+ <PROTOCOLS>
+  <Add mover="ssse_cstdes"/>
+  <Add mover="spose_cstdes"/>
+  <Add mover="cst_cstdes"/>
+  <Add mover="design_cstdes"/>
+  <Add mover="rm_cstdes"/>
+  <Add mover="ssse_cstdes_cart"/>
+  <Add mover="cst_cstrel"/>
+  <Add filter="rmsd_cstdes"/>
+  <Add mover="labelcore_cstdes"/>
+  <Add mover="labelboundary_cstdes"/>
+  <Add mover="labelsurface_cstdes"/>
+  <Add mover="labeldump_cstdes"/>
+  <Add mover="sse_report_cstdes"/>
+  <Add filter="pack_cstdes"/>
+  <Add filter="cav_vol_cstdes"/>
+  <Add filter="sse_match_cstdes"/>
+ </PROTOCOLS>
+</ROSETTASCRIPTS>

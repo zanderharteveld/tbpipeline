@@ -1,0 +1,5 @@
+rmsd,pdb,chain,match,abego,3mers,9mers,loop,loop_length,length_count
+1.6675,2fhz,A,"[(63, 70), (76, 92)]",ABBBBBBBABAAAAAAAAAAAAAAAAAAAA,/work/lpdi/databases/frags/fh/2fhz_A.200.3mers.gz,/work/lpdi/databases/frags/fh/2fhz_A.200.9mers.gz,ABAAA,5,5
+1.8049,1r5p,A,"[(1, 8), (14, 30)]",BBBBBBBBEBBAAAAAAAAAAAAAAAAAAG,/work/lpdi/databases/frags/r5/1r5p_A.200.3mers.gz,/work/lpdi/databases/frags/r5/1r5p_A.200.9mers.gz,EBBAA,5,5
+1.9383,1l1s,A,"[(1, 8), (14, 30)]",BBBBBBBABABAAAAAAAAAAAAAAAAABA,/work/lpdi/databases/frags/l1/1l1s_A.200.3mers.gz,/work/lpdi/databases/frags/l1/1l1s_A.200.9mers.gz,BABAA,5,5
+2.1579,1vc1,A,"[(13, 20), (26, 42)]",BBBBBBBEBBBAAAAAAAAAAAAAAAAABA,/work/lpdi/databases/frags/vc/1vc1_A.200.3mers.gz,/work/lpdi/databases/frags/vc/1vc1_A.200.9mers.gz,BBBAA,5,5
