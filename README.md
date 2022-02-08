@@ -2,7 +2,7 @@
 
 This repository contains the data required to reproduce the benchmarks and experiments as presented in:
 
-Zander Harteveld, Jaume Bonet, Stéphane Rosset, Che Yang, Fabian Sesterhenn, and Bruno E. Correia. *A generic framework for layered de novo protein design.* (2022)
+Zander Harteveld, Jaume Bonet, Stéphane Rosset, Che Yang, Fabian Sesterhenn, and Bruno E. Correia. *A hierarchical framework for layered de novo protein design.* (2022)
 
 TopoBuilder documentation at: https://topobuilder.readthedocs.io/en/master/
 
