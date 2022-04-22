@@ -51,7 +51,7 @@ MASTER requires a database of protein structures to perform it's searches. To po
 
 **Creating your custom MASTER database** will require you to do some precomputations. You need to download the PDBs you would like to include, as well as creating the PDS files using MASTER createPDS executable, creating structure fragments (3mers and 9mers) via Rosetta, calculate the ABEG0 torsions and the secondary structure patterns. Note that large databases can have an impact on the speed and the overall performance, thus we highly recommend to reduce the size of the database. It is possible to store the full database, but only subsearch over a given list of PDBs, e.g. structures in a size range of 70 AA - 120 AA and fully alpha-helical. We give some examples of such reduced list in the database folder ([all_superfamily_70_120.xfilter](database/all_superfamily_70_120.xfilter), [beta_sandwich_70_120.xfilter](database/beta_sandwich_70_120.xfilter), ...). One will need to specify the file directly within the TopoBuilder configuration file.
 
-**Luckily, we provide a small MASTER database** that (most of the time) will be enough for most of the tasks, and contains all the structures necessary to reproduce the modeling in the paper. As the data will not automatically be downloaded. The data is located in the data-branch and needs to be manually downloaded (under database/master_pdb, database/maps, database/frags, ABEG0 torsions database/master_abego.fa.gz and secondary structure database/master_sse.fa.gz.
+**Luckily, we provide a small MASTER database** that (most of the time) will be enough for most of the modeling and design tasks. The database can be downloaded from [zenodo](https://zenodo.org/record/6477481#.YmKQVpJByAo).
 
 #### PSIPRED: 
 
